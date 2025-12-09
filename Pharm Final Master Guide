@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nursing Pharmacology Exam Mastery Guide (100% Based on Study Guide)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #28a745;
+            margin-top: 30px;
+            border-bottom: 2px solid #28a745;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #ffc107;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+        .highlight {
+            background-color: #ffe4b2; /* Light yellow for highly testable info */
+            border-left: 5px solid #ffc107;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .danger {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .key-dose {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .toggle-btn {
+            background-color: #17a2b8;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 5px;
+            margin-right: 10px;
+        }
+        .definition {
+            display: none;
+            background-color: #e9ecef;
+            padding: 10px;
+            margin-top: 5px;
+            border-left: 3px solid #17a2b8;
+        }
+        .section-header {
+            cursor: pointer;
+            background-color: #28a745;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2em;
+        }
+        .content {
+            padding: 15px;
+            border: 1px solid #28aa463a;
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+        }
+        .list-item {
+            margin-bottom: 8px;
+        }
+    </style>
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id + '-content');
+            const header = document.getElementById(id + '-header');
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                header.innerHTML = header.innerHTML.replace('▼', '►');
+            } else {
+                content.style.display = "block";
+                header.innerHTML = header.innerHTML.replace('►', '▼');
+            }
+        }
+
+        function toggleDefinition(id) {
+            const definition = document.getElementById(id);
+            if (definition.style.display === "block") {
+                definition.style.display = "none";
+            } else {
+                definition.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎯 Nursing Pharmacology Exam Mastery Guide (Emergency Drugs & Review)</h1>
+    <p>This guide includes only the information from your study resources, with an emphasis on **nursing considerations and key doses** as highlighted by your professor. Use the toggles to quiz yourself!</p>
+
+    <div class="section-header" id="emergency-header" onclick="toggleContent('emergency')">
+        Emergency Drug Pharmacology (Focus: ACS, Dysrhythmias, Support) ►
+    </div>
+    <div class="content" id="emergency-content" style="display: block;">
+        <h2>I. Acute Coronary Syndromes (ACS) and Myocardial Infarction (MI) Drugs</h2>
+        <table>
+            <tr>
+                <th>Drug</th>
+                <th>Primary Action</th>
+                <th>Key Nursing/Dosing Implications (Highly Testable)</th>
+            </tr>
+            <tr>
+                <td>**Aspirin** (Non-enteric) [cite: 327]</td>
+                <td>Decreases platelet aggregation[cite: 327].</td>
+                <td class="highlight">
+                    * **Administer immediately** at onset of chest pain (162–325 mg orally)[cite: 328].
+                    * Patient must <span class="key-dose">**chew the tablet**</span> for faster absorption[cite: 329].
+                    * Contraindications: true allergy, cerebral hemorrhage, or recent Gastrointestinal (GI) bleeding[cite: 331].
+                </td>
+            </tr>
+            <tr>
+                <td>**Nitroglycerin (NTG)** [cite: 332]</td>
+                <td>Treatment of choice for angina/MI[cite: 332]. Dilates coronary arteries; decreases preload and afterload[cite: 332, 333].</td>
+                <td class="highlight">
+                    * <span class="key-dose">**Limit:**</span> Up to **3 doses** (sublingual tablets or translingual spray) within 15 minutes[cite: 337].
+                    * <span class="key-dose">**Monitoring:**</span> Systolic Blood Pressure (BP) must remain <span class="danger">**above 90 mm Hg**</span>[cite: 338].
+                    * **Instruction:** Spray should be directed onto or under the tongue and <span class="danger">**NOT inhaled**</span>[cite: 340].
+                    * **Safety:** Any NTG patch must be <span class="danger">**removed**</span> before cardioversion or defibrillation to prevent arcing and burns[cite: 345].
+                </td>
+            </tr>
+            <tr>
+                <td>**Morphine Sulfate** [cite: 346]</td>
+                <td>Relieves pain, dilates venous vessels, and reduces heart workload[cite: 347]. Used for STEMI chest pain unrelieved by NTG[cite: 346].</td>
+                <td class="highlight">
+                    * **Key Nursing Implication:** Administer <span class="danger">**slowly**</span> and titrate carefully due to the risk of **respiratory depression** and **hypotension**[cite: 349].
+                    * **Important Consideration:** Respiratory distress is <span class="danger">**NOT a contraindication**</span> when treating acute cardiogenic pulmonary edema[cite: 350].
+                    * **Reversal:** If adverse effects are significant, use the opioid antagonist <span class="key-dose">**naloxone**</span> (0.4–2 mg, repeated every 2 minutes)[cite: 351].
+                </td>
+            </tr>
+        </table>
+
+        <h2>II. Dysrhythmia and Heart Rate Control Drugs</h2>
+        <table>
+            <tr>
+                <th>Drug</th>
+                <th>Primary Action & Indication</th>
+                <th>Dosing & Key Nursing Implications (Highly Testable)</th>
+            </tr>
+            <tr>
+                <td>**Atropine Sulfate** [cite: 352]</td>
+                <td>Primary drug for hemodynamically significant **bradycardia**[cite: 352]. Increases heart rate[cite: 352]. Reverses toxic effects of **organophosphate poisoning**[cite: 353].</td>
+                <td class="highlight">
+                    * **Standard Dose:** <span class="key-dose">**1 mg IV**</span> every 3–5 minutes up to a maximum of <span class="key-dose">**3 mg IV**</span>[cite: 355].
+                    * **Safety:** Doses should <span class="danger">**NEVER be less than 0.5 mg**</span>; lower doses can cause paradoxical bradycardia[cite: 356].
+                    * **Organophosphate Poisoning:** Typical dose limits <span class="danger">**do NOT apply**</span>; very high doses may be necessary[cite: 359, 360].
+                    * **Adverse Effect:** Common issue is **tachycardia**[cite: 363].
+                </td>
+            </tr>
+            <tr>
+                <td>**Adenosine** [cite: 364]</td>
+                <td>First-line drug of choice for treating **Paroxysmal Supraventricular Tachycardia (PSVT)**[cite: 364]. Slows conduction through the AV node[cite: 365].</td>
+                <td class="highlight">
+                    * <span class="key-dose">**Administration:**</span> Administered as a <span class="key-dose">**6 mg IV bolus over 1 second**</span>[cite: 367].
+                    * Must be immediately followed by a **saline flush and arm elevation** (due to its half-life being less than 5 seconds)[cite: 367].
+                    * **Repeat Dose:** <span class="key-dose">**12 mg bolus**</span>[cite: 368].
+                    * **Adverse Effect:** A short period of <span class="danger">**asystole (up to 15 seconds)**</span> may follow injection, but spontaneous activity typically resumes[cite: 374].
+                    * **Contraindication:** <span class="danger">**Bronchospastic disease**</span> (risk of inducing bronchospasm)[cite: 371].
+                </td>
+            </tr>
+            <tr>
+                <td>**Diltiazem** [cite: 376]</td>
+                <td>Second-line agent for PSVT[cite: 376]. Slows **ventricular response rate** in atrial fibrillation or flutter[cite: 376].</td>
+                <td class="highlight">
+                    * **Monitoring:** The nurse must carefully monitor **blood pressure, heart rate, and rhythm**[cite: 383].
+                    * **Absolute Contraindication:** <span class="danger">**Simultaneous beta blockers**</span> (risk of myocardial depression and severe bradycardia)[cite: 385].
+                    * <span class="key-dose">**Initial Bolus:**</span> <span class="key-dose">**0.25 mg/kg IV**</span> over 2 minutes[cite: 379].
+                </td>
+            </tr>
+            <tr>
+                <td>**Amiodarone** (IV) [cite: 387]</td>
+                <td>First-line drug for **life-threatening ventricular dysrhythmias** (Pulseless Ventricular Tachycardia/Ventricular Fibrillation - VT/VF)[cite: 387].</td>
+                <td class="highlight">
+                    * **Cardiac Arrest (Pulseless VT/VF):** <span class="key-dose">**300 mg rapid infusion**</span> [cite: 391] (after defibrillation and epinephrine) [cite: 391].
+                    * **Patients with a Pulse (VT):** <span class="key-dose">**150 mg IV over 10 minutes**</span>[cite: 390].
+                    * **Adverse Effects:** Significant risks include <span class="danger">**hypotension**</span> and <span class="danger">**bradycardia**</span>[cite: 394].
+                    * **Safety:** Should <span class="danger">**not be given concurrently**</span> with other drugs that prolong the QT interval[cite: 396].
+                </td>
+            </tr>
+            <tr>
+                <td>**Lidocaine** [cite: 397]</td>
+                <td>First-line alternative to amiodarone [cite: 397] for significant **ventricular dysrhythmias**[cite: 397]. Decreases myocardial irritability[cite: 398].</td>
+                <td class="highlight">
+                    * **Toxicity Monitoring:** Assess for signs of <span class="danger">**toxicity**</span> (e.g., <span class="danger">**confusion, drowsiness, muscle twitching, seizures**</span>)[cite: 403].
+                    * <span class="key-dose">**Initial Bolus:**</span> <span class="key-dose">**1–1.5 mg/kg**</span> IV/Intraosseous (IO)[cite: 400]. Total maximum dose is <span class="key-dose">**3 mg/kg**</span>[cite: 401].
+                    * **Dose Reduction:** Dose may need to be <span class="key-dose">**reduced by 50%**</span> in patients with hepatic impairment, heart failure, shock, or advanced age (>70 years)[cite: 404, 405].
+                </td>
+            </tr>
+            <tr>
+                <td>**Magnesium Sulfate** [cite: 417]</td>
+                <td>Essential element; <span class="key-dose">**drug of choice for Torsades de Pointes**</span>[cite: 417].</td>
+                <td class="highlight">
+                    * **Cardiac Arrest (Torsades):** <span class="key-dose">**1–2 g**</span> via <span class="key-dose">**direct IV push or IO**</span> over 5–20 minutes[cite: 420].
+                    * **Adverse Effect:** <span class="danger">**Hypotension**</span> is most common with rapid IV push[cite: 423].
+                    * **Toxicity (Hypermagnesemia):** Can lead to <span class="danger">**respiratory depression**</span> and <span class="danger">**deep tendon reflex impairment**</span>[cite: 425].
+                </td>
+            </tr>
+        </table>
+
+        <h2>III. Critical Cardiac, Respiratory, and Circulatory Support Drugs</h2>
+        <table>
+            <tr>
+                <th>Drug</th>
+                <th>Primary Action & Indication</th>
+                <th>Dosing & Key Nursing Implications (Highly Testable)</th>
+            </tr>
+            <tr>
+                <td>**Epinephrine** [cite: 427]</td>
+                <td>Constricts peripheral vessels and improves heart/brain perfusion in cardiac arrest[cite: 427].</td>
+                <td class="highlight">
+                    * <span class="key-dose">**Cardiac Arrest:**</span> <span class="key-dose">**1 mg IV/IO**</span> (1:10,000 solution) every <span class="key-dose">**3–5 minutes**</span>[cite: 429].
+                    * **Incompatibility:** <span class="danger">**Never administer in the same site as alkaline solutions**</span> (e.g., sodium bicarbonate), as they inactivate epinephrine[cite: 437].
+                    * **Monitoring:** Requires **constant cardiac and hemodynamic monitoring**[cite: 435].
+                </td>
+            </tr>
+            <tr>
+                <td>**Sodium Bicarbonate** [cite: 439]</td>
+                <td>Treats severe metabolic acidosis[cite: 439].</td>
+                <td class="highlight">
+                    * <span class="danger">**NOT a first-line drug for cardiac arrest**</span> [cite: 441]; reserved for severe acidosis that fails to correct after adequate resuscitation[cite: 442].
+                    * **Key Risk:** Can lead to <span class="danger">**metabolic alkalosis**</span>, which is difficult to reverse[cite: 447].
+                    * **Incompatibility:** <span class="danger">**Do NOT infuse catecholamines**</span> (epinephrine, dopamine, norepinephrine) in the same site, as it inactivates them[cite: 448].
+                </td>
+            </tr>
+            <tr>
+                <td>**Mannitol** [cite: 450]</td>
+                <td>Osmotic diuretic used to treat **cerebral edema** and reduce **increased intracranial pressure** (intracranial hypertension)[cite: 450].</td>
+                <td class="highlight">
+                    * **Safety:** A <span class="key-dose">**filter needle must be used**</span> during administration because crystals may form in the solution[cite: 455].
+                    * **Monitoring:** Requires careful assessment of **neurologic status** and **accurate Intake and Output (I/O)** records due to substantial diuresis[cite: 456].
+                    * **Hold Dose:** Administration is typically **held if serum osmolality exceeds 320 mOsm/kg**[cite: 453].
+                </td>
+            </tr>
+            <tr>
+                <td>**Labetalol** [cite: 569]</td>
+                <td>Alpha- and beta-adrenergic blocker [cite: 569] for the acute management of **hypertensive crisis**[cite: 569].</td>
+                <td class="highlight">
+                    * <span class="key-dose">**Initial Dose:**</span> <span class="key-dose">**10–20 mg IV push over 2 minutes**</span>[cite: 572]. Max cumulative dose is <span class="key-dose">**300 mg**</span>[cite: 573].
+                    * **Contraindication:** <span class="danger">**Bronchial asthma or Chronic Obstructive Pulmonary Disease (COPD)**</span> (due to risk of bronchospasm)[cite: 577].
+                    * **Monitoring:** **Frequent blood pressure measurement** (every 5 minutes during bolus/initiation) is essential[cite: 575].
+                </td>
+            </tr>
+            <tr>
+                <td>**Furosemide** [cite: 580]</td>
+                <td>Loop diuretic for **acute pulmonary edema** and **hypertensive crisis**[cite: 580]. Causes peripheral and renal vasodilation[cite: 581].</td>
+                <td class="highlight">
+                    * **Adverse Effect:** Significant risk of <span class="danger">**severe hypovolemia, dehydration, and electrolyte disturbances (especially hypokalemia)**</span>[cite: 587].
+                    * **Monitoring:** Requires careful assessment of fluid/electrolyte status, **strict Intake and Output (I/O)**, and auscultation of breath sounds[cite: 588].
+                    * **Drug Interaction:** Increases the risk of **digitalis toxicity** due to hypokalemia[cite: 589].
+                </td>
+            </tr>
+        </table>
+
+        <h2>IV. Reversal/Overdose & Shock Drugs</h2>
+        <h3>Key Concept: Drugs for Hypovolemic Shock</h3>
+        <div class="highlight">
+            * Drugs should <span class="danger">**NEVER be the primary treatment for hypovolemic shock**</span>[cite: 485].
+            * Initial therapy must <span class="key-dose">**only involve administering fluids or blood products**</span>[cite: 486].
+            * Vasoactive drugs are only used if hypotension persists <span class="key-dose">**AFTER**</span> appropriate volume resuscitation[cite: 487].
+        </div>
+
+        <table>
+            <tr>
+                <th>Drug</th>
+                <th>Primary Action & Indication</th>
+                <th>Dosing & Key Nursing Implications (Highly Testable)</th>
+            </tr>
+            <tr>
+                <td>**Naloxone** [cite: 459]</td>
+                <td>An **opioid antagonist**[cite: 459]. Reverses effects of all opioid drugs[cite: 459].</td>
+                <td class="highlight">
+                    * <span class="key-dose">**Dose:**</span> <span class="key-dose">**0.4 to 2 mg**</span> every 2 minutes until patient condition improves[cite: 464].
+                    * **Monitoring:** Requires <span class="danger">**close monitoring**</span> for **recurrent opioid effects** (e.g., respiratory depression) because most opioids have a longer half-life than Naloxone[cite: 468].
+                    * **Safety:** Nurses must be prepared for <span class="danger">**combative or violent behavior**</span> and should have security personnel present[cite: 471].
+                </td>
+            </tr>
+            <tr>
+                <td>**Flumazenil** [cite: 472]</td>
+                <td>Reversal agent for the <span class="key-dose">**respiratory depressant and sedative effects of benzodiazepines**</span>[cite: 472].</td>
+                <td class="highlight">
+                    * **Risk of Seizures:** **Seizure precautions are essential** for patients at risk (long-term use/abuse, known seizure disorder) as rapid reversal can precipitate seizures[cite: 481].
+                    * <span class="key-dose">**Initial Dose:**</span> <span class="key-dose">**0.2 mg IV**</span> over 30 seconds[cite: 475].
+                    * **Adverse Effects:** Rapid reversal can cause **emergence reactions** (agitation, confusion, perceptual distortions)[cite: 482].
+                </td>
+            </tr>
+            <tr>
+                <td>**Dopamine** [cite: 488]</td>
+                <td>Sympathomimetic agent; treats **hypotension in shock states**[cite: 488].</td>
+                <td class="highlight">
+                    * <span class="key-dose">**Extravasation Risk:**</span> Can cause tissue necrosis[cite: 498]. If extravasation occurs, inject the site with <span class="key-dose">**phentolamine**</span> (5–10 mg)[cite: 499].
+                    * **Weaning:** Must be <span class="danger">**weaned gradually**</span>; abrupt discontinuation causes immediate, severe hypotension[cite: 493].
+                    * **Incompatibility:** <span class="danger">**Sodium bicarbonate will inactivate Dopamine**</span>; do not infuse in the same line[cite: 494].
+                </td>
+            </tr>
+            <tr>
+                <td>**Norepinephrine** [cite: 510]</td>
+                <td>Extremely potent vasoconstrictor[cite: 511]. Used in shock when less potent agents fail or as a first-line alternative to Dopamine[cite: 510].</td>
+                <td class="highlight">
+                    * **Safety:** Must <span class="danger">**not be used as initial therapy**</span> if hypovolemia is present; volume must be restored first[cite: 515].
+                    * **Extravasation Risk:** Extravasation causes <span class="danger">**tissue necrosis**</span>. If it occurs, infiltrate the site with <span class="key-dose">**phentolamine**</span>[cite: 520].
+                    * **Weaning:** Must be <span class="danger">**tapered slowly**</span>; abrupt discontinuation causes severe hypotension[cite: 516].
+                </td>
+            </tr>
+            <tr>
+                <td>**Epinephrine for Anaphylaxis** [cite: 521]</td>
+                <td><span class="key-dose">**Drug of choice for anaphylactic shock**</span>[cite: 521]. Causes bronchodilation and vasoconstriction[cite: 522].</td>
+                <td class="highlight">
+                    * <span class="key-dose">**Standard Dose (IM):**</span> <span class="key-dose">**0.3–0.5 mg IM**</span> (1:1000 solution)[cite: 524]. IM route is preferred for predictable absorption[cite: 525].
+                    * **Monitoring:** Monitor closely for **tachycardia, hypertension, and cardiac dysrhythmias**[cite: 530].
+                    * **Co-Treatment:** **Antihistamines** (e.g., diphenhydramine) and **steroids** are standard co-treatments to prevent recurrence[cite: 531].
+                </td>
+            </tr>
+            <tr>
+                <td>**Dextrose 50% (D50)** [cite: 549]</td>
+                <td>Treats **severe hypoglycemia** when oral administration is unsafe[cite: 549].</td>
+                <td class="highlight">
+                    * **Administration Site:** Highly irritating; should be given in a <span class="danger">**large peripheral or central vein**</span> to prevent phlebitis, tissue sloughing, and necrosis from extravasation[cite: 552].
+                    * **Monitoring:** Monitor <span class="key-dose">**blood glucose carefully**</span> and accurately record **urine output** (risk of osmotic diuresis)[cite: 554, 555].
+                </td>
+            </tr>
+            <tr>
+                <td>**Glucagon** [cite: 557]</td>
+                <td>Elevates blood glucose by stimulating glycogenolysis[cite: 557]. Indicated for severe hypoglycemia when D50 is unavailable or cannot be given IV[cite: 557].</td>
+                <td class="highlight">
+                    * <span class="key-dose">**Dose:**</span> <span class="key-dose">**1 mg**</span> via subcut, IM, or IV[cite: 560].
+                    * **Intervention:** If coma persists after <span class="key-dose">**two doses**</span> (repeated once after 15 minutes), **D50 must be administered**[cite: 562, 563].
+                    * **Other Uses:** Can be used to reverse <span class="key-dose">**calcium channel blocker and beta-blocker overdose**</span>[cite: 564].
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section-header" id="review-header" onclick="toggleContent('review')">
+        Review Pharmacology Concepts (Highly Testable) ►
+    </div>
+    <div class="content" id="review-content" style="display: none;">
+        <h2>V. Antibiotic Mechanisms of Action (MOA)</h2>
+        <div class="list-item">
+            <button class="toggle-btn" onclick="toggleDefinition('fluoro-moa')">Fluoroquinolones MOA</button>
+            <div class="definition" id="fluoro-moa">
+                Inhibits bacterial **DNA gyrase** (Topoisomerase II) and **Topoisomerase IV**, preventing DNA replication[cite: 597].
+            </div>
+            <p class="highlight">Key Adverse Effects: Tendon rupture, QT prolongation, Central Nervous System (CNS) effects[cite: 598].</p>
+        </div>
+        <div class="list-item">
+            <button class="toggle-btn" onclick="toggleDefinition('sulfa-moa')">Sulfonamides MOA</button>
+            <div class="definition" id="sulfa-moa">
+                Inhibits **folic acid synthesis**[cite: 600]. Sulfonamides inhibit **dihydropteroate synthase**[cite: 600].
+            </div>
+            <p class="highlight">Key Adverse Effects: **Hypersensitivity** (Stevens-Johnson syndrome), crystalluria, photosensitivity[cite: 601].</p>
+        </div>
+        <div class="list-item">
+            <button class="toggle-btn" onclick="toggleDefinition('amino-moa')">Aminoglycosides MOA</button>
+            <div class="definition" id="amino-moa">
+                Binds to the **30S ribosomal subunit**, causing misreading of messenger RNA (mRNA) and production of abnormal proteins[cite: 603].
+            </div>
+            <p class="highlight">Key Adverse Effects: <span class="danger">**Ototoxicity**</span> (irreversible hearing loss/vertigo) and <span class="key-dose">**Nephrotoxicity**</span> (reversible). Therapeutic drug monitoring is essential[cite: 604].</p>
+        </div>
+
+        <h2>VI. Renin-Angiotensin-Aldosterone System (RAAS) Drugs</h2>
+        <div class="list-item">
+            <button class="toggle-btn" onclick="toggleDefinition('acei-moa')">ACE Inhibitors (-pril) MOA</button>
+            <div class="definition" id="acei-moa">
+                Blocks the enzyme that converts Angiotensin I to Angiotensin II[cite: 607].
+            </div>
+            <p class="highlight">
+                **Specific Side Effects:** <span class="danger">**Angioedema**</span> (due to bradykinin build-up), persistent dry <span class="danger">**cough**</span>[cite: 612].
+            </p>
+        </div>
+        <div class="list-item">
+            <button class="toggle-btn" onclick="toggleDefinition('arb-moa')">Angiotensin II Receptor Blockers (ARBs) (-sartan) MOA</button>
+            <div class="definition" id="arb-moa">
+                Blocks Angiotensin II from binding to its AT1 receptor[cite: 608].
+            </div>
+        </div>
+        <div class="highlight">
+            **Common ACEi/ARB Side Effects:** <span class="danger">**Hyperkalemia**</span>, <span class="danger">**Fetal toxicity**</span> (contraindicated in pregnancy)[cite: 611].
+        </div>
+
+        <h2>VII. Other Key Concepts & Nursing Considerations</h2>
+        <h3>Preterm Labor (PTL) with Magnesium Sulfate (MgSO4)</h3>
+        <ul>
+            <li class="list-item">MgSO4 is used primarily for <span class="key-dose">**fetal neuroprotection**</span> (reducing the risk of cerebral palsy in preterm infants)[cite: 626].</li>
+            <li class="list-item">**Toxicity:** Can cause CNS and respiratory depression in the mother and fetus[cite: 628].</li>
+            <li class="list-item">**Critical Monitoring:** <span class="danger">**Deep tendon reflexes (DTRs)**</span> are the most critical sign of toxicity (loss of DTRs signals impending respiratory arrest)[cite: 629].</li>
+            <li class="list-item">**Antidote:** <span class="key-dose">**Calcium Gluconate**</span>[cite: 630].</li>
+        </ul>
+
+        <h3>Antihypertensives with Benign Prostatic Hyperplasia (BPH)</h3>
+        <ul>
+            <li class="list-item">**Drug Class:** <span class="key-dose">**Alpha-Adrenergic Blockers**</span> (e.g., Prazosin, Terazosin, Doxazosin)[cite: 621].</li>
+            <li class="list-item">**Dual Use:** These drugs relax smooth muscle in the bladder/prostate to improve urinary flow <span class="key-dose">**AND**</span> lower blood pressure[cite: 623].</li>
+            <li class="list-item">**Key Side Effect:** <span class="danger">**First-dose orthostatic hypotension**</span> (dizziness/fainting upon standing)[cite: 624].</li>
+        </ul>
+
+        <h3>Syphilis Treatment</h3>
+        <ul>
+            <li class="list-item">**Standard of Care:** <span class="key-dose">**Penicillin G**</span>[cite: 638].</li>
+            <li class="list-item">The stage of syphilis dictates the specific dose and duration of Benzathine Penicillin G[cite: 639].</li>
+        </ul>
+
+        <h3>Testosterone Medications</h3>
+        <ul>
+            <li class="list-item">Used to treat male **hypogonadism** (low testosterone)[cite: 632].</li>
+            <li class="list-item">**Contraindication:** <span class="danger">**Prostate cancer**</span> (testosterone fuels prostate cancer)[cite: 636].</li>
+            <li class="list-item">**Side Effects:** Hepatotoxicity, polycythemia (increased Red Blood Cells - RBCs), fluid retention[cite: 635].</li>
+        </ul>
+
+    </div>
+    <p>Good luck with your exam! You are 100% prepared using this study material.</p>
+</div>
+
+</body>
+</html>
